@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image' // Importamos el componente Image de Next.js para optimizar la carga de imágenes
 
 const Footer: React.FC = () => (
-  <footer className="text-white body-font header-theme">
+  <footer className="text-white body-font bg-[#B87333]">
     {' '}
     {/* Definimos el fondo morado y el texto blanco para el pie de página */}
     {/* Sección de la imagen con el logo del FabLab UV */}
@@ -193,11 +193,11 @@ const Footer: React.FC = () => (
       </div>
     </div>
     {/* Sección de derechos de autor */}
-    <div className="top-bar">
+    <div className="bg-[#8C4F26]">
       <div className="container mx-auto py-0.5 px-7 flex flex-wrap flex-col sm:flex-row justify-between items-center">
         {/* Texto de derechos reservados */}
         <p className="text-sm text-center sm:text-left">
-          © 2024 FabLab UV — Todos los derechos reservados.
+          © 2024 CUtrans — Todos los derechos reservados.
         </p>
         {/* Iconos de redes sociales */}
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">

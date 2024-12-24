@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import menuItems from '@/layouts/main-layout/components/data/navbar/menuItems.json'
+import menuItems from '@/data/navbar/menuItems.json'
 
 const NavBar: React.FC = () => {
   if (menuItems.length > 7) {
@@ -66,7 +66,7 @@ const NavBar: React.FC = () => {
                       : 'h-65'
 
   return (
-    <nav className="bg-[#210a3e] h-[70px] flex items-center justify-between relative hidden lg:flex px-[170px] z-20">
+    <nav className="bg-[#B87333] h-[70px] flex items-center justify-between relative hidden lg:flex px-[170px] z-20">
       <div className="flex items-center">
         {menuItems.map((item) => (
           <div
@@ -90,10 +90,10 @@ const NavBar: React.FC = () => {
                 className={`px-[40px] h-[70px] rounded-none
                   ${
                     hoveredItem === item.name || selectedItem === item.name
-                      ? 'bg-[#210a3e] text-white' // Cambia el color a negro si el ítem está seleccionado o en hover
-                      : 'bg-[#210a3e] text-white'
+                      ? 'bg-[#B87333] text-white' // Cambia el color a negro si el ítem está seleccionado o en hover
+                      : 'bg-[#B87333] text-white'
                   } 
-                  hover:bg-white hover:text-[#210a3e]`} // Personaliza el hover
+                  hover:bg-white hover:text-[#B87333]`} // Personaliza el hover
                 onClick={() => {
                   handleItemClick(item.name)
                 }}

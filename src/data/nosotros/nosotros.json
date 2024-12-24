@@ -1,0 +1,20 @@
+{
+  "quienesSomos": {
+    "titulo": "Quiénes Somos",
+    "descripcion": "Somos una empresa de transporte especializada en el sector minero, brindando soluciones logísticas para empresas dedicadas a la minería del cobre. Nuestra misión es ofrecer un servicio seguro y eficiente que garantice la entrega oportuna de materiales y maquinaria.",
+    "servicios": [
+      {
+        "icon": "BusIcon",
+        "titulo": "Transporte",
+        "descripcion": "Servicios de transporte para personal y materiales en la industria minera.",
+        "paraQuienes": "Empresas mineras y trabajadores del sector."
+      },
+      {
+        "icon": "TruckIcon",
+        "titulo": "Maquinaria",
+        "descripcion": "Transporte especializado para maquinaria pesada de minería.",
+        "paraQuienes": "Empresas mineras con necesidades de transporte de maquinaria."
+      }
+    ]
+  }
+}

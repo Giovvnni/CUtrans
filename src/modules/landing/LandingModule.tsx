@@ -7,7 +7,6 @@ import { Slider } from '@/components/common/slider/Slider'
 import slideData from './data/carouselData.json'
 
 import 'keen-slider/keen-slider.min.css'
-import Contact from '@/modules/contacts/Contact'
 import LandingAboutUsView from '@/modules/nosotros/views/LandingAboutUsView'
 
 const LandingModule: React.FC = () => {
@@ -16,7 +15,6 @@ const LandingModule: React.FC = () => {
       <div className="w-full">
         <Slider className="md:h-[45vh] lg:h-[65vh]" data={slideData} />
         <LandingAboutUsView />
-        <Contact />
       </div>
     </MainLayout>
   )
