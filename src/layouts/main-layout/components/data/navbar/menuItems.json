@@ -1,8 +1,8 @@
 [
   {
-    "name": "nosotros",
-    "href": "/nosotros",
-    "subItems": [{ "name": "equipamiento", "href": "/nosotros" }]
+    "name": "Inicio",
+    "href": "/",
+    "subItems": [{ "name": "", "href": "" }]
   },
   {
     "name": "proyectos",
@@ -19,11 +19,7 @@
   },
   {
     "name": "talleres",
-    "href": "/talleres",
-    "subItems": [
-      { "name": "inscripciones", "href": "/talleres/inscripciones" },
-      { "name": "fechas", "href": "/talleres/fechas" }
-    ]
+    "href": "/talleres"
   },
   {
     "name": "contacto",
