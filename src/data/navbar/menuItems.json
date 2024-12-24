@@ -5,24 +5,7 @@
     "subItems": [{ "name": "", "href": "" }]
   },
   {
-    "name": "proyectos",
-    "href": "/proyectos"
-  },
-  {
-    "name": "competencia cr^2",
-    "href": "/competencia-cr2"
-  },
-
-  {
-    "name": "residencia",
-    "href": "/residencia"
-  },
-  {
-    "name": "talleres",
-    "href": "/talleres"
-  },
-  {
-    "name": "contacto",
+    "name": "Contacto",
     "href": "/contacto"
   }
 ]

@@ -4,7 +4,7 @@ import { MainLayout } from '@/layouts/main-layout/MainLayout'
 
 import { Slider } from '@/components/common/slider/Slider'
 
-import slideData from './data/carouselData.json'
+import slideData from '@/data/slider/carouselData.json'
 
 import 'keen-slider/keen-slider.min.css'
 import LandingAboutUsView from '@/modules/nosotros/views/LandingAboutUsView'

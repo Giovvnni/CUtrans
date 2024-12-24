@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import menuItems from '@/data/navbar/menuItems.json'
+import Image from 'next/image'
 
 const NavBar: React.FC = () => {
   if (menuItems.length > 7) {
@@ -66,8 +67,25 @@ const NavBar: React.FC = () => {
                       : 'h-65'
 
   return (
-    <nav className="bg-[#B87333] h-[70px] flex items-center justify-between relative hidden lg:flex px-[170px] z-20">
+    <nav className="bg-white h-[70px] flex items-center justify-between relative hidden lg:flex z-20">
       <div className="flex items-center">
+        {/* Logo */}
+        <div className="ml-[80px]">
+          <Link href="/">
+            <Image
+              src="/assets/cutrans_logo.png"
+              alt="Logo"
+              width={70}
+              height={70}
+            />
+          </Link>
+        </div>
+        <div>
+          <Link href="/">
+            <span className="text-2xl font-bold text-[#FF7F32] ml-1 ">CU</span>
+            <span className="text-2xl font-bold text-black mr-10 ">TRANS</span>
+          </Link>
+        </div>
         {menuItems.map((item) => (
           <div
             key={item.name}
@@ -87,13 +105,13 @@ const NavBar: React.FC = () => {
             <Link href={item.href}>
               <Button
                 variant="secondary"
-                className={`px-[40px] h-[70px] rounded-none
+                className={` h-[70px] rounded-none
                   ${
                     hoveredItem === item.name || selectedItem === item.name
-                      ? 'bg-[#B87333] text-white' // Cambia el color a negro si el ítem está seleccionado o en hover
-                      : 'bg-[#B87333] text-white'
+                      ? 'bg-white text-[#8C4F26]' // Cambia el color a negro si el ítem está seleccionado o en hover
+                      : 'bg-white text-[#8C4F26]'
                   } 
-                  hover:bg-white hover:text-[#B87333]`} // Personaliza el hover
+                  hover:bg-white hover:text-[#8C4F26]    `} // Personaliza el hover
                 onClick={() => {
                   handleItemClick(item.name)
                 }}
@@ -112,7 +130,7 @@ const NavBar: React.FC = () => {
                     {item.subItems.map((subItem) => (
                       <Link key={subItem.name} href={subItem.href} passHref>
                         <div className="flex justify-start px-4 py-6 cursor-pointer z-10 whitespace-nowrap">
-                          <span className="text-[#210a3e] hover:text-[#0d0d0d] transition-colors duration-300 hover:font-bold text-xs ml-6">
+                          <span className="text-[#E55302] hover:text-[#0d0d0d] transition-colors duration-300 hover:font-bold text-xs ml-6">
                             {subItem.name.toUpperCase()}
                           </span>
                         </div>

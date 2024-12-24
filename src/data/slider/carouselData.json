@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Nuestra flota",
+    "description": "lorem ipsum",
+    "url": "",
+    "image": "/assets/slide1.png"
+  },
+  {
+    "title": "Maquinaria",
+    "description": "lorem ipsum",
+    "url": "",
+    "image": "/assets/slide2.png"
+  }
+]

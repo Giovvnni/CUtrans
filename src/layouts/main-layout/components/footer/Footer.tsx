@@ -2,206 +2,48 @@ import React from 'react'
 import Image from 'next/image' // Importamos el componente Image de Next.js para optimizar la carga de imágenes
 
 const Footer: React.FC = () => (
-  <footer className="text-white body-font bg-[#B87333]">
-    {' '}
-    {/* Definimos el fondo morado y el texto blanco para el pie de página */}
-    {/* Sección de la imagen con el logo del FabLab UV */}
-    <div className=" container flex justify-start py-4">
-      {' '}
-      {/* Padding horizontal de 5rem y padding vertical de 1.25rem */}
-      <Image
-        src="/assets/fablab.logo.blanco.webp" // Ruta del logo
-        alt="FabLab UV Logo"
-        width={245} // Ancho de la imagen
-        height={66} // Alto de la imagen
-      />
-    </div>
-    {/* Contenedor principal del pie de página que organiza los diferentes enlaces */}
-    <div className="container mx-auto mt-4 flex flex-wrap justify-center items-start">
-      {/* Columna de "Links relacionados" */}
-      <div className="lg:w-1/5 md:w-1/4 w-full ">
-        <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-          Links relacionados
-        </h2>
-        <nav className="list-none mb-5 space-y-4 text-sm ">
-          {' '}
-          {/* Usamos space-y-4 para separar cada elemento */}
-          <li>
-            <a
-              href="https://fablab.uv.cl/"
-              className="text-white hover:text-gray-400"
-            >
-              Sobre el FabLab UV
-            </a>
-          </li>{' '}
-          {/* Enlace con href */}
-          <li>
-            <a
-              href="https://ingenieria.uv.cl/"
-              className="text-white hover:text-gray-400"
-            >
-              Facultad de Ingeniería UV
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://investigacion.uv.cl/quienes-somos/equipo-de-trabajo/"
-              className="text-white hover:text-gray-400"
-            >
-              Vicerrectorías de Investigación e Innovación UV (VRII)
-            </a>
-          </li>
-          <li>
-            <a href="" className="text-white hover:text-gray-400">
-              Contacto
-            </a>
-          </li>
-        </nav>
+  <footer className="text-white body-font bg-[#36424A]">
+    <div className="ml-[100px] mb-4">
+      <div className=" container flex justify-start py-4">
+        {' '}
+        {/* Padding horizontal de 5rem y padding vertical de 1.25rem */}
+        <Image
+          src="/assets/cutrans_blanco.png" // Ruta del logo
+          alt="CUtrans logo"
+          width={100} // Ancho de la imagen
+          height={100} // Alto de la imagen
+        />
+        <div className="py-5">
+          <span className="text-3xl font-bold text-[#FF7F32] ml-1 ">CU</span>
+          <span className="text-3xl font-bold text-white mr-10 ">TRANS</span>
+        </div>
       </div>
-
-      {/* Columna de "Programas" */}
-      <div className="lg:w-1/5 md:w-1/4 w-full px-4 mb-4">
-        <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-          Programas
-        </h2>
-        <nav className="list-none mb-10 space-y-4 text-sm ">
-          <li>
-            <a
-              href="https://fablab.uv.cl/competencia-cr2/reiniciatec"
-              className="text-white hover:text-gray-400"
-            >
-              Reiniciatec
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://fablab.uv.cl/fablabuv/proyectos-21-22"
-              className="text-white hover:text-gray-400"
-            >
-              Comunidad UV
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://fablab.uv.cl/fablabuv/servicios"
-              className="text-white hover:text-gray-400"
-            >
-              Industria
-            </a>
-          </li>
-        </nav>
-      </div>
-
-      {/* Columna de "Redes sociales" */}
-      <div className="lg:w-1/5 md:w-1/4 w-full px-4 mb-4">
-        <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-          Redes sociales
-        </h2>
-        <nav className="list-none mb-10 space-y-4 text-sm ">
-          <li>
-            <a
-              href="https://instagram.com/fablabuv"
-              className="text-white hover:text-gray-400"
-            >
-              Instagram
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@fablabuv2276"
-              className="text-white hover:text-gray-400"
-            >
-              Youtube
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://facebook.com/fablabuv"
-              className="text-white hover:text-gray-400"
-            >
-              Facebook
-            </a>
-          </li>{' '}
-          {/* Agregamos Facebook */}
-        </nav>
-      </div>
-
-      {/* Columna de "Partners" */}
-      <div className="lg:w-1/5 md:w-1/4 w-full px-4 mb-4">
-        <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-          Partners
-        </h2>
-        <nav className="list-none mb-10 space-y-4 text-sm ">
-          <li>
-            <a
-              href="https://www.fundacionfuturo.cl/"
-              className="text-white hover:text-gray-400"
-            >
-              Fundación Futuro
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.positronica.cl/"
-              className="text-white hover:text-gray-400"
-            >
-              Positrónica
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.zambeca.cl/tiendaOficial/"
-              className="text-white hover:text-gray-400"
-            >
-              Zambeca
-            </a>
-          </li>
-        </nav>
-      </div>
-
-      {/* Columna de "Otros Links de interés" */}
-      <div className="lg:w-1/5 md:w-1/4 w-full px-4 mb-4">
-        <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-          Otros Links de interés
-        </h2>
-        <nav className="list-none mb-10 space-y-4 text-sm ">
-          <li>
-            <a
-              href="https://eiva.cl/"
-              className="text-white hover:text-gray-400"
-            >
-              EIVA
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://v21.cl/"
-              className="text-white hover:text-gray-400"
-            >
-              Distrito de innovación V21
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.corfo.cl/sites/cpp/regiones/valparaiso"
-              className="text-white hover:text-gray-400"
-            >
-              CORFO Valparaíso
-            </a>
-          </li>
-        </nav>
+      {/* Contenedor principal del pie de página que organiza los diferentes enlaces */}
+      <div className="container mx-auto mt-2 flex flex-wrap justify-start items-start">
+        {/* Columna de "Links relacionados" */}
+        <div className="lg:w-1/5 md:w-1/4 w-full ">
+          <h2 className="whitespace-nowrap title-font font-medium text-white tracking-widest text-sm mb-3">
+            Manuel Montt 275
+          </h2>
+          <h2 className="whitespace-nowrap title-font font-medium text-white tracking-widest text-sm mb-3">
+            Oficina 502, piso 5, Providencia, Santiago, Chile
+          </h2>
+          <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
+            +56 9 4272 5705
+          </h2>
+        </div>
       </div>
     </div>
     {/* Sección de derechos de autor */}
-    <div className="bg-[#8C4F26]">
+    <div className="bg-[#E55302]">
       <div className="container mx-auto py-0.5 px-7 flex flex-wrap flex-col sm:flex-row justify-between items-center">
         {/* Texto de derechos reservados */}
-        <p className="text-sm text-center sm:text-left">
-          © 2024 CUtrans — Todos los derechos reservados.
+        <p className="text-sm text-center sm:text-left ml-[100px]">
+          © 2024 CUTRANS — Todos los derechos reservados.
         </p>
         {/* Iconos de redes sociales */}
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a href="https://www.instagram.com/fablabuv" className="ml-3 ">
+          <a className="ml-3 ">
             {/* Icono de Instagram */}
             <svg
               fill="none"
@@ -217,7 +59,7 @@ const Footer: React.FC = () => (
             </svg>
           </a>
           {/* Icono de YouTube */}
-          <a href="https://www.youtube.com/@fablabuv2276" className="ml-3 ">
+          <a className="ml-3 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -228,10 +70,7 @@ const Footer: React.FC = () => (
             </svg>
           </a>
           {/* Icono de Discord */}
-          <a
-            href="https://www.google.com/url?q=https%3A%2F%2Fdiscord.gg%2FpgMQ8dAVxG&sa=D&sntz=1&usg=AOvVaw349d04ikWvpdf-SfYTtewz"
-            className="ml-3 "
-          >
+          <a className="ml-3 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

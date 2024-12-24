@@ -146,7 +146,7 @@ const ContactView: React.FC = () => {
             ref={submitButtonRef}
             type="submit"
             disabled={isSubmitting || submitted} // Desactiva el botón si se está enviando o ya fue enviado
-            className={`text-white bg-[#210a3e] border-0 py-2 px-6 focus:outline-none rounded text-lg 
+            className={`text-white bg-[#E55302] border-0 py-2 px-6 focus:outline-none rounded text-lg 
                 ${submitted ? 'bg-gray-500 cursor-not-allowed' : isSubmitting ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#210a3e] hover:bg-indigo-600'}`}
           >
             {isSubmitting ? 'Enviando...' : submitted ? 'Enviado' : 'Enviar'}
