@@ -1,4 +1,4 @@
-// src/components/QuienesSomosFablabUV.tsx
+// src/components/QuienesSomos.tsx
 'use client'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -13,7 +13,7 @@ const iconMap: Record<string, JSX.Element> = {
   BusIcon: <BusIcon className="w-10 h-10 text-[#B87333]" />
 }
 
-const QuienesSomosFablabUV: React.FC = () => {
+const QuienesSomos: React.FC = () => {
   const { titulo, descripcion, servicios } = nosotrosData.quienesSomos
 
   return (
@@ -74,4 +74,4 @@ const ServiceCard: React.FC<Service> = ({
   )
 }
 
-export default QuienesSomosFablabUV
+export default QuienesSomos

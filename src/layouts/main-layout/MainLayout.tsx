@@ -5,6 +5,7 @@ import React from 'react'
 
 import { Footer } from './components/footer'
 import { NavBar } from './components/navbar'
+import Contactanos from './components/contact/contactanos'
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -21,6 +22,9 @@ const MainLayout: React.FC<RootLayoutProps> = ({ children }) => {
       <footer>
         <Footer />
       </footer>
+      <div>
+        <Contactanos />
+      </div>
     </>
   )
 }
