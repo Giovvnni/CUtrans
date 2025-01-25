@@ -1,0 +1,13 @@
+deployment:
+  tasks:
+    - name: Clonar el repositorio
+      command: git clone https://github.com/usuario/mi-proyecto-react.git .
+
+    - name: Instalar dependencias
+      command: npm install
+
+    - name: Construir la aplicación
+      command: npm run build
+
+    - name: Mover los archivos al directorio público
+      command: cp -R build/* /home/usuario/public_html
