@@ -1,8 +1,5 @@
 deployment:
   tasks:
-    - name: Clonar el repositorio
-      command: git clone https://github.com/Giovvnni/CUtrans
-
     - name: Instalar dependencias
       command: npm install
 
