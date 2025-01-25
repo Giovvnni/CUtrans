@@ -6,5 +6,5 @@ deployment:
     - name: Construir la aplicación
       command: npm run build
 
-    - name: Mover los archivos al directorio público
-      command: cp -R build/* /home/usuario/public_html/cutrans.cl
+    - name: Copiar archivos al directorio público
+      command: cp -R build/* public_html/
