@@ -9,7 +9,7 @@ const Contactanos: React.FC = (): JSX.Element => {
   return (
     <div className="fixed bottom-40 right-4 flex justify-center items-center">
       <a
-        href="https://wa.me/56931831134?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios."
+        href="https://wa.me/56942725705?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios."
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => {
